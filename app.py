@@ -16,8 +16,8 @@ def predict():
     features = [float(x) for x in request.form['features'].split(',')]
     prediction = model.predict([features])[0]
     result = 'Benign' if prediction == 0 else 'Malignant'
-    return render_template('index.html', 
-        prediction_text=f'Predicted Cancer Type: {result}')
+    return render_template('index.html',
+    prediction_text=f'Predicted Cancer Type: {result}')
 
 
 if __name__ == '_main_':
