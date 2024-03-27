@@ -1,7 +1,6 @@
 from sklearn.datasets import load_breast_cancer
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-import joblib
 
 
 def test_svm_classifier_accuracy():
@@ -17,3 +16,4 @@ def test_svm_classifier_accuracy():
     # Assert if accuracy is greater than 0
     accuracy = clf.score(X_test, y_test)
     assert accuracy > 0
+    
