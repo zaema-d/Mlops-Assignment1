@@ -2,6 +2,7 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 
+
 def test_svm_classifier_accuracy():
     # Load dataset and split it
     data = load_breast_cancer()
